@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" />
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Family Tree With Groups</title>
+    <style>
+      html,
+      body {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        font-family: Helvetica;
+      }
+
+      #tree {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <link
+      href="#"
+      rel="stylesheet"
+    />
+
+    <script src="./OrgChart.js"></script>
+<div class="w3-bar">
+  <button class="w3-bar-item w3-button w3-blue" style="width:100%"><a href="index.html">Back to Home Page</a></button>
+</div>
+    <div id="tree"></div>
+    <script>
+      window.onload = function () {
+        var familyGroupTag = {
+          group: true,
+          template: "group_grey",
+          groupState: OrgChart.EXPAND,
+        };
+
+        var chart = new OrgChart(document.getElementById("tree"), {
+          template: "diva",
+          enableDragDrop: true,
+          nodeBinding: {
+            field_0: "name",
+            field_1: "title",
+            img_0: "img",
+          },
+          tags: {
+            f1: familyGroupTag,
+            f2: familyGroupTag,
+            f3: familyGroupTag,
+            f4: familyGroupTag,
+            f5: familyGroupTag,
+			f6: familyGroupTag,
+            f7: familyGroupTag,
+            f8: familyGroupTag,
+            f9: familyGroupTag,
+            f10: familyGroupTag,
+			f11: familyGroupTag,
+            f12: familyGroupTag,
+            f13: familyGroupTag,
+            f14: familyGroupTag,
+            f15: familyGroupTag,
+			f16: familyGroupTag,
+            f17: familyGroupTag,
+            f18: familyGroupTag,
+            f19: familyGroupTag,
+            f20: familyGroupTag,
+			f21: familyGroupTag,
+            f22: familyGroupTag,
+            f23: familyGroupTag,
+            f24: familyGroupTag,
+            f25: familyGroupTag,
+			f26: familyGroupTag,
+            f27: familyGroupTag,
+            f28: familyGroupTag,
+            f29: familyGroupTag,
+            f30: familyGroupTag,
+			f31: familyGroupTag,
+            f32: familyGroupTag,
+            f33: familyGroupTag,
+            f34: familyGroupTag,
+            f35: familyGroupTag,
+			f36: familyGroupTag,
+            f37: familyGroupTag,
+            f38: familyGroupTag,
+            f39: familyGroupTag,
+            f40: familyGroupTag,
+          },
+          nodes: [
+         {
+            "id": "10",
+            "tags": ["f3"],
+            "name": "Devabathini Venkataramaiah",
+            "gender": "Male",
+            "occupation": "Farmer",
+            "address": "East Kambhampadu",
+            "img": "./images/devabathini/10.jpg"
+        },
+        {
+            "id": "11",
+            "tags": ["f3"],
+            "name": "Gorantla Venkata Lakshamma",
+            "gender": "Female",
+            "occupation": "Farmer",
+            "address": "East Kambhampadu",
+            "img": "./images/devabathini/11.jpg"
+        },
+        {
+            "id": "12",
+            "tags": ["f4"],
+            "pid": "10",
+            "name": "Devabathini Hari Narayana",
+            "gender": "Male",
+            "education": "MA, PHD",
+            "occupation": "Professor",
+            "address": "East Kambhampadu",
+            "img": "./images/devabathini/12.jpg"
+        },
+        {
+            "id": "13",
+            "tags": ["f5"],
+            "pid": "10",
+            "name": "Devabathini Prameela",
+            "gender": "Female",
+            "occupation": "House Wife",
+            "address": "East Kambhampadu",
+            "img": "./images/devabathini/13.jpg"
+        },
+        {
+            "id": "14",
+            "tags": ["f6"],
+            "pid": "10",
+            "name": "Devabathini Rajeswari",
+            "gender": "Female",
+            "education": "MA, Mphil",
+            "occupation": "House Wife",
+            "address": "East Kambhampadu",
+            "img": "./images/devabathini/14.jpg"
+        },
+        {
+            "id": "15",
+            "tags": ["f7"],
+            "pid": "10",
+            "name": "Devabathini Ramesh Babu",
+            "gender": "Male",
+            "occupation": "Farmer",
+            "address": "East Kambhampadu",
+            "img": "./images/devabathini/15.jpg"
+        },
+        {
+            "id": "16",
+            "tags": ["f4"],
+            "name": "Doddapuneni Bhagyalakshmi",
+            "gender": "Female",
+            "education": "PHD",
+            "occupation": "Principal",
+            "img": "./images/devabathini/16.jpg"
+        },
+        {
+            "id": "17",
+            "tags": ["f5"],
+            "name": "Polavarapu Chandrashekhar",
+            "gender": "Male",
+            "occupation": "EO,Endowment dept",
+            "img": "./images/devabathini/17.jpg"
+        },
+        {
+            "id": "18",
+            "tags": ["f6"],
+            "name": "Aluru Venkata Rama Kishore",
+            "gender": "Male",
+            "occupation": "Civil Engineer",
+            "address": "Visakhapatnam",
+            "img": "./images/devabathini/18.jpg"
+        },
+        {
+            "id": "19",
+            "tags": ["f7"],
+            "name": "Yarra Padmavathi",
+            "gender": "Female",
+            "occupation": "House Wife",
+            "address": "Gopalapuram",
+            "img": "./images/devabathini/19.jpg"
+        },
+        {
+            "id": "20",
+            "tags": ["f8"],
+            "pid": "12",
+            "name": "Devabathini Chandana",
+            "gender": "Female",
+            "education": "MS Computers",
+            "occupation": "Software Engineer",
+            "address": "Visakhapatnam",
+            "img": "./images/devabathini/20.jpg"
+        },
+        {
+            "id": "21",
+            "tags": ["f9"],
+            "pid": "12",
+            "name": "Devabathini Raj Nandan",
+            "gender": "Male",
+            "education": "MBA, PHD",
+            "occupation": "Professor",
+            "address": "Visakhapatnam",
+            "img": "./images/devabathini/21.jpg"
+        },
+        {
+            "id": "22",
+            "tags": ["f10"],
+            "pid": "13",
+            "name": "Polavarapu Gopi Prasanna",
+            "gender": "Male",
+            "education": "Btech",
+            "occupation": "Software Engineer",
+            "address": "Addanki",
+            "img": "./images/devabathini/22.jpg"
+        },
+        {
+            "id": "23",
+            "tags": ["f11"],
+            "pid": "13",
+            "name": "Polavarapu Prasanthi",
+            "gender": "Female",
+            "education": "Btech",
+            "occupation": "Software Engineer",
+            "address": "Addanki",
+            "img": "./images/devabathini/23.jpg"
+        },
+        {
+            "id": "24",
+            "tags": ["f12"],
+            "pid": "14",
+            "name": "Aluri Neelima",
+            "gender": "Female",
+            "education": "MS Computers",
+            "occupation": "Software Engineer",
+            "address": "Visakhapatnam",
+            "img": "./images/devabathini/24.jpg"
+        },
+        {
+            "id": "25",
+            "pid": "14",
+            "name": "Aluri Vijay",
+            "gender": "Male",
+            "education": "MD",
+            "occupation": "Doctor",
+            "address": "Visakhapatnam",
+            "img": "./images/devabathini/25.jpg"
+        },
+        {
+            "id": "26",
+            "pid": "14",
+            "name": "Aluri Ajay",
+            "gender": "Male",
+            "education": "Mpharm",
+            "occupation": "R&D Pharma",
+            "address": "Visakhapatnam",
+            "img": "./images/devabathini/26.jpg"
+        },
+        {
+            "id": "27",
+            "tags": ["f13"],
+            "pid": "15",
+            "name": "Devabathini Raj Naveen",
+            "gender": "Male",
+            "education": "Mpharm",
+            "occupation": "R&D Pharma",
+            "address": "East Kambhampadu",
+            "img": "./images/devabathini/27.jpg"
+        },
+        {
+            "id": "28",
+            "pid": "15",
+            "name": "Devabathini Venkatram",
+            "gender": "Male",
+            "education": "Btech",
+            "occupation": "Pharma",
+            "address": "East Kambhampadu",
+            "img": "./images/devabathini/28.jpg"
+        },
+        {
+            "id": "29",
+            "tags": ["f8"],
+            "name": "Vasireddy Vamsi Krishna",
+            "gender": "Male",
+            "education": "MS Computers",
+            "occupation": "Software Engineer",
+            "address": "Vijayawada",
+            "img": "./images/devabathini/29.jpg"
+        },
+        {
+            "id": "30",
+            "tags": ["f9"],
+            "gender": "Female",
+            "education": "PHD",
+            "occupation": "Professor",
+            "address": "Vijayawada",
+            "img": "./images/devabathini/30.jpg"
+        },
+        {
+            "id": "31",
+            "tags": ["f10"],
+            "gender": "Female",
+            "education": "Btech",
+            "occupation": "Software Engineer",
+            "address": "Narasarao pet",
+            "img": "./images/devabathini/31.jpg"
+        },
+        {
+            "id": "32",
+            "tags": ["f11"],
+            "gender": "Male",
+            "education": "Btech",
+            "occupation": "Software Engineer",
+            "address": "Nadendla",
+            "img": "./images/devabathini/32.jpg"
+        },
+        {
+            "id": "33",
+            "tags": ["f12"],
+            "gender": "Male",
+            "education": "MD",
+            "occupation": "Doctor",
+            "address": "Yadlapadu",
+            "img": "./images/devabathini/33.jpg"
+        },
+        {
+            "id": "34",
+            "tags": ["f13"],
+            "name": "Gorantla Naga Pavani",
+            "gender": "Female",
+            "education": "Mpharm",
+            "occupation": "R&D Pharma",
+            "address": "Karamchedu",
+            "img": "./images/devabathini/34.jpg"
+        },
+        {
+            "id": "35",
+            "pid":"27",
+            "name": "Devabathini Tejasram",
+            "gender": "Male",
+            "education": "",
+            "occupation": "",
+            "address": "East Kambhampadu",
+            "img": "./images/devabathini/35.jpg"
+        }
+          ],
+        });
+      };
+    </script>
+  </body>
+</html>
