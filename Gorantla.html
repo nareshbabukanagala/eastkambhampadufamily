@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Family Tree With Groups</title>
+    <style>
+      html,
+      body {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        font-family: Helvetica;
+      }
+
+      #tree {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <link
+    href="https://fonts.googleapis.com/css?family=Gochi+Hand"
+      rel="stylesheet"
+    />
+
+   <script src="https://balkangraph.com/js/latest/OrgChart.js"></script>
+ <div class="w3-bar">
+  <button class="w3-bar-item w3-button w3-blue" style="width:100%"><a href="index.html">Back to Home Page</a></button>
+</div>
+    <div id="tree"></div>
+    <script>
+      window.onload = function () {
+        var familyGroupTag = {
+          group: true,
+          template: "group_grey",
+          groupState: OrgChart.EXPAND,
+        };
+
+        var chart = new OrgChart(document.getElementById("tree"), {
+          template: "diva",
+          enableDragDrop: true,
+          nodeBinding: {
+            field_0: "name",
+            field_1: "title",
+            img_0: "img",
+          },
+          tags: {
+            f1: familyGroupTag,
+            f2: familyGroupTag,
+            f3: familyGroupTag,
+            f4: familyGroupTag,
+            f5: familyGroupTag,
+            f6: familyGroupTag,
+            f7: familyGroupTag,
+            f8: familyGroupTag,
+            f9: familyGroupTag,
+            f10: familyGroupTag,
+            f11: familyGroupTag,
+            f12: familyGroupTag,
+            f13: familyGroupTag,
+            f14: familyGroupTag,
+            f15: familyGroupTag,
+            f16: familyGroupTag,
+            f17: familyGroupTag,
+            f18: familyGroupTag,
+            f19: familyGroupTag,
+            f20: familyGroupTag,
+            f21: familyGroupTag,
+            f22: familyGroupTag,
+            f23: familyGroupTag,
+            f24: familyGroupTag,
+            f25: familyGroupTag,
+            f26: familyGroupTag,
+            f27: familyGroupTag,
+            f28: familyGroupTag,
+            f29: familyGroupTag,
+            f30: familyGroupTag,
+            f31: familyGroupTag,
+            f32: familyGroupTag,
+            f33: familyGroupTag,
+            f34: familyGroupTag,
+            f35: familyGroupTag,
+            f36: familyGroupTag,
+            f37: familyGroupTag,
+            f38: familyGroupTag,
+            f39: familyGroupTag,
+            f40: familyGroupTag,
+            f41: familyGroupTag,
+            f42: familyGroupTag,
+            f43: familyGroupTag,
+            f44: familyGroupTag,
+            f45: familyGroupTag,
+            f46: familyGroupTag,
+            f47: familyGroupTag,
+            f48: familyGroupTag,
+            f49: familyGroupTag,
+            f50: familyGroupTag,
+            f51: familyGroupTag,
+            f52: familyGroupTag,
+            f53: familyGroupTag,
+            f54: familyGroupTag,
+            f55: familyGroupTag,
+            f56: familyGroupTag,
+            f57: familyGroupTag,
+            f58: familyGroupTag,
+            f59: familyGroupTag,
+            f60: familyGroupTag,
+            f61: familyGroupTag,
+            f62: familyGroupTag,
+            f63: familyGroupTag,
+            f64: familyGroupTag,
+            f65: familyGroupTag,
+            f66: familyGroupTag,
+            f67: familyGroupTag,
+            f68: familyGroupTag,
+            f69: familyGroupTag,
+            f70: familyGroupTag,
+            f71: familyGroupTag,
+            f72: familyGroupTag,
+            f73: familyGroupTag,
+            f74: familyGroupTag,
+            f75: familyGroupTag,
+            f76: familyGroupTag,
+            f77: familyGroupTag,
+            f78: familyGroupTag,
+            f79: familyGroupTag,
+            f80: familyGroupTag
+          },
+          nodes: [
+         {
+            "id": "1",
+            "tags": ["f1"],
+            "name": "Gorantla Raghavayya",
+            "gender": "Male",
+            "occupation": "Farmer",
+            "address": "East Kambhampadu",
+            "img": "./images/gorantla/1.jpg"
+        },
+        {
+            "id": "2",
+             "tags": ["f1"],
+            "name": "Mahalakshmi",
+            "gender": "Female",
+            "occupation": "Farmer",
+            "address": "East Kambhampadu",
+            "img": "./images/gorantla/2.jpg"
+        },
+        {
+            "id": "3",
+            "tags": ["f2"],
+            "pid": "1",
+            "name": "Gorantla Saraswathi",
+            "gender": "Female",
+            "occupation": "Farmer",
+            "address": "East Kambhampadu",
+            "img": "./images/gorantla/3.jpg"
+        },
+        {
+            "id": "4",
+            "tags": ["f2"],
+            "name": "Manam vasayya",
+            "gender": "Male",
+            "occupation": "Farmer",
+            "address": "East Kambhampadu",
+            "img": "./images/gorantla/4.jpg"
+        },
+        {
+            "id": "5",
+            "tags": ["f3"],
+            "pid": "3",
+            "name": "Manam Lakshmamma",
+            "gender": "Female",
+            "occupation": "Farmer",
+            "address": "East Kambhampadu",
+            "img": "./images/gorantla/5.jpg"
+        },
+        {
+            "id": "6",
+            "tags": ["f3"],
+            "name": "Unnam Kanthaiah",
+            "gender": "Male",
+            "occupation": "Farmer",
+            "address": "East Kambhampadu",
+            "img": "./images/gorantla/6.jpg"
+        },
+        {
+            "id": "7",
+            "tags": ["f4"],
+            "pid": "3",
+            "name": "Manam Subbulamma",
+            "gender": "Female",
+            "occupation": "Farmer",
+            "address": "East Kambhampadu",
+            "img": "./images/gorantla/7.jpg"
+        },
+        {
+            "id": "8",
+            "tags": ["f4"],
+            "name": "Gorantla Kotaiah",
+            "gender": "Male",
+            "occupation": "Farmer",
+            "address": "East Kambhampadu",
+            "img": "./images/gorantla/8.jpg"
+        },
+        {
+            "id": "9",
+            "tags": ["f5"],
+            "pid": "1",
+            "name": "Gorantla Rajamma",
+            "gender": "Female",
+            "occupation": "Farmer",
+            "img": "./images/gorantla/9.jpg"
+        },
+        {
+            "id": "10",
+            "tags": ["f5"],
+            "name": "Kanagala Srikrushnam",
+            "gender": "Male",
+            "occupation": "Farmer",
+            "img": "./images/gorantla/10.jpg"
+        },
+        {
+            "id": "11",
+            "tags": ["f6"],
+            "pid": "1",
+            "name": "Gorantla Venkayamma",
+            "gender": "Female",
+            "occupation": "Farmer",
+            "img": "./images/gorantla/11.jpg"
+        },
+        {
+            "id": "12",
+            "tags": ["f6"],
+            "name": "Name not available",
+            "gender": "Male",
+            "occupation": "Farmer",
+            "address": "Thellapadu",
+            "img": "./images/gorantla/12.jpg"
+        },
+        {
+            "id": "13",
+            "tags": ["f7"],
+            "pid": "11",
+            "name": "Chalichama Prakasam",
+            "gender": "Male",
+            "occupation": "Farmer",
+            "address": "Thellapadu",
+            "img": "./images/gorantla/13.jpg"
+        },
+        {
+            "id": "14",
+            "tags": ["f7"],
+            "name": "Ravanamma",
+            "gender": "Female",
+            "address": "Thellapadu",
+            "img": "./images/gorantla/14.jpg"
+        },
+        {
+            "id": "15",
+            "tags": ["f8"],
+            "pid": "11",
+            "name": "Chalichama Rajyalakshmi",
+            "gender": "Female",
+            "address": "Thellapadu",
+            "img": "./images/gorantla/15.jpg"
+        },
+        {
+            "id": "16",
+            "tags": ["f9"],
+            "pid": "1",
+            "name": "Gorantla Krishnaiah",
+            "gender": "Male",
+            "address": "East Kambhampadu",
+            "img": "./images/gorantla/16.jpg"
+        },
+        {
+            "id": "17",
+            "tags": ["f9"],
+            "name": "Chalichama Saraswathi",
+            "gender": "Female",
+            "address": "Thellapadu",
+            "img": "./images/gorantla/17.jpg"
+        },
+        {
+            "id": "18",
+            "tags": ["f10"],
+            "pid": "16",
+            "name": "Gorantla Anjaneyulu",
+            "gender": "Male",
+            "address": "East Kambhampadu",
+            "img": "./images/gorantla/18.jpg"
+        },
+        {
+            "id": "19",
+            "tags": ["f10"],
+            "name": "Yenikapati Subbayamma",
+            "gender": "Female",
+            "address": "Ayyavari Thakeelapadu",
+            "img": "./images/gorantla/19.jpg"
+        },
+        {
+            "id": "20",
+            "tags": ["f11"],
+            "pid": "18",
+            "name": "Gorantla Surendrababu",
+            "gender": "Male",
+            "address": "East Kambhampadu",
+            "img": "./images/gorantla/20.jpg"
+        },
+        {
+            "id": "21",
+            "tags": ["f11"],
+            "name": "Kanagala Nagasri",
+            "gender": "Female",
+            "address": "Addanki",
+            "img": "./images/gorantla/21.jpg"
+        },
+        {
+            "id": "22",
+            "pid": "20",
+            "name": "Gorantla Lithiksha sai avnika",
+            "gender": "Female",
+            "address": "East Kambhampadu",
+            "img": "./images/gorantla/22.jpg"
+        },
+        {
+            "id": "23",
+            "pid": "18",
+            "name": "Gorantla Narendra Babu",
+            "gender": "Male",
+            "address": "East Kambhampadu",
+            "img": "./images/gorantla/23.jpg"
+        },
+        {
+            "id": "24",
+            "tags": ["f12"],
+            "pid": "16",
+            "name": "Gorantla Baburao",
+            "gender": "Male",
+            "address": "East Kambhampadu",
+            "img": "./images/gorantla/24.jpg"
+        },
+        {
+            "id": "25",
+            "tags": ["f12"],
+            "name": "Madala Saraswathi",
+            "gender": "Female",
+            "address": "Govada",
+            "img": "./images/gorantla/25.jpg"
+        },
+        {
+            "id": "26",
+            "tags": ["f13"],
+            "pid": "24",
+            "name": "Gorantla Nagalakshmi",
+            "gender": "Female",
+            "address": "East Kambhampadu",
+            "img": "./images/gorantla/26.jpg"
+        },
+        {
+            "id": "27",
+            "tags": ["f13"],
+            "name": "Madala Peda Danayya",
+            "gender": "Male",
+            "address": "Govada",
+            "img": "./images/gorantla/27.jpg"
+        },
+        {
+            "id": "28",
+            "pid": "26",
+            "name": "Madala Abhiram Gopichand",
+            "gender": "Male",
+            "address": "Govada",
+            "img": "./images/gorantla/28.jpg"
+        },
+        {
+            "id": "29",
+            "pid": "26",
+            "name": "Madala Hema Sravanthi",
+            "gender": "Female",
+            "address": "Govada",
+            "img": "./images/gorantla/29.jpg"
+        },
+        {
+            "id": "30",
+            "tags": ["f14"],
+            "pid": "24",
+            "name": "Gorantla Pavani",
+            "gender": "Female",
+            "address": "East Kambhampadu",
+            "img": "./images/gorantla/30.jpg"
+        },
+        {
+            "id": "31",
+            "tags": ["f14"],
+            "name": "Chalichama Ramaseshayya",
+            "gender": "Male",
+            "address": "Thellapadu",
+            "img": "./images/gorantla/31.jpg"
+        },
+        {
+            "id": "32",
+            "pid": "30",
+            "name": "Chalichama Naga Sandeep",
+            "gender": "Male",
+            "address": "Thellapadu",
+            "img": "./images/gorantla/32.jpg"
+        },
+        {
+            "id": "33",
+            "pid": "24",
+            "name": "Gorantla Sureka",
+            "gender": "Female",
+            "address": "East Kambhampadu",
+            "img": "./images/gorantla/33.jpg"
+        },
+        {
+            "id": "34",
+            "pid": "16",
+            "name": "Gorantla Nageswara Rao",
+            "gender": "Male",
+            "address": "East Kambhampadu",
+            "img": "./images/gorantla/34.jpg"
+        },
+        {
+            "id": "35",
+            "tags": ["f15"],
+            "pid": "16",
+            "name": "Gorantla Venkateswarlu",
+            "gender": "Male",
+            "address": "East Kambhampadu",
+            "img": "./images/gorantla/35.jpg"
+        },
+        {
+            "id": "36",
+            "tags": ["f15"],
+            "name": "Chaganti Kusuma Kumari",
+            "gender": "Female",
+            "address": "East Kambhampadu",
+            "img": "./images/gorantla/36.jpg"
+        },
+        {
+            "id": "37",
+            "tags": ["f16"],
+            "pid": "35",
+            "name": "Gorantla Nagavalli",
+            "gender": "Female",
+            "address": "East Kambhampadu",
+            "img": "./images/gorantla/37.jpg"
+        },
+        {
+            "id": "38",
+            "tags": ["f16"],
+            "name": "Konduri Madhusudana Rao",
+            "gender": "Male",
+            "address": "Kovuru",
+            "img": "./images/gorantla/38.jpg"
+        },
+        {
+            "id": "39",
+            "pid": "37",
+            "name": "Koduri Rishita",
+            "gender": "Female",
+            "address": "Kovuru",
+            "img": "./images/gorantla/39.jpg"
+        },
+        {
+            "id": "40",
+            "pid": "37",
+            "name": "Koduri Jahnavi",
+            "gender": "Female",
+            "address": "Kovuru",
+            "img": "./images/gorantla/40.jpg"
+        },
+        {
+            "id": "41",
+            "tags": ["f17"],
+            "pid": "35",
+            "name": "Gorantla Nirusha",
+            "gender": "Female",
+            "address": "East Kambhampadu",
+            "img": "./images/gorantla/41.jpg"
+        },
+        {
+            "id": "42",
+            "tags": ["f17"],
+            "name": "Unnam Bharadwaj",
+            "gender": "Male",
+            "address": "Vinodarayunivaripalem",
+            "img": "./images/gorantla/42.jpg"
+        }
+          ],
+        });
+      };
+    </script>
+  </body>
+</html>
